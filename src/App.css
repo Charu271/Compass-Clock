@@ -1,0 +1,110 @@
+body{
+  background-color:rgb(39, 37, 37);
+  color:white;
+  overflow:hidden;
+}
+.zodiac{
+  font-size:2rem;
+  margin:2%;
+  margin-right:0.5%;
+}
+.tyear{
+  font-size:1rem;
+}
+.bottom-month{
+  bottom:5%;
+  right:5%;
+  position:absolute;
+  font-size:2rem;
+}
+.item{
+  position:absolute;
+  opacity:0.5;  
+  text-align: right;
+  transition: all .5s;
+
+}
+
+.month{
+  top:45vh;
+  right:45vw;
+  width:20%;
+  
+}
+.day{
+  top:45vh;
+  right:35vw;
+  width:40%;
+  
+}
+.hour{
+  top:45vh;
+  right:25vw;
+  width:60%;
+}
+.min{
+  top:45vh;
+  right:15vw;
+  width:80%;
+}
+.sec{
+  top:45vh;
+  right:5vw;
+  width:100%;
+}
+.item.active{
+  opacity:1;
+  font-size:1.5rem;
+}
+@media only screen and (max-width:750px){
+  .month{
+    width:25%;
+  }
+  .day{
+    width:45%;
+  }
+  .hour{
+    width:65%;
+  }
+  .min{
+    width:85%;
+  }
+  .sec{
+    width:105%;
+  }
+  .item.active{
+    font-size:1.2rem;
+  }
+}
+@media only screen and (max-width:450px){
+  .month{
+    
+    display:none;
+  }
+  .day{
+    
+    display:none;
+  }
+  .hour{
+    left:35vw;
+    width:35%;
+    
+  }
+  .item{
+    margin:10px;
+  }
+  .min{
+    left:15vw;
+    width:70%;
+  }
+  .sec{
+    left:0vw;
+
+    width:100%;
+  }
+  .item.active{
+    font-size:1rem;
+    font-weight:bolder;
+
+  }
+}
